@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="images/css/all.min.css".css">
+    <title>scheduale time</title>
+</head>
+<body>
+    <main>
+<!--       
+       -->
+      <nav id="navigator">
+        <i id="menu-icon" class="fas fa-bars fa-2x"></i>
+        <span>
+          <i class="fas fa-book-reader fa-2x">Schedule</i>
+        </span>  <!-- here we add this to make gap between our tags  and also we can have -->
+        <div>
+          <button id="saveBtn">save Data</button>
+          <button id="resetBtn">reset Data</button>
+        </div>
+      </nav>
+      <!-- drawer -->
+      <div class="drawer">
+        <div class="profile">
+          <div>
+            <i class="fab fa-angellist fa-2x"></i>
+          </div>
+          <i id="close-btn" class="fas fa-arrow-right"></i>
+        </div>
+        <div id="setting-container">
+          <div class="settings">
+            <label for="color-picker">change header color</label>
+            <input type="color"  id="color-picker" value="#222f3e"> 
+          </div>
+          <div class="settings">
+            <label for="background-color-picker">change backgroundColor</label>
+            <input type="color" id="background-color-picker" value="#3498db">
+          </div>
+          <div class="settings">
+            <label for="container-font-size">Change Font Size</label>
+            <input type="range"  id="container-font-size" min="14" max="22" step="2" value="14">
+          </div>
+          <div class="settings">
+            <button id="reset-settings">Reset Settings</button>
+          </div>
+        </div>
+      </div>
+      <table id="main-table">
+        <!-- header -->
+        <tr class="day-container">
+          <td>&nbsp;</td>
+          <th>شنبه</th>
+          <th>1 شنبه</th>
+          <th>2 شنبه</th>
+          <th>3 شنبه</th>
+          <th>4 شنبه</th>
+          <th>5 شنبه</th>
+          <th>جمعه</th>
+        </tr>
+        <!-- 7:30 - 9 -->
+        <tr>
+          <td class="time-identifier">
+            <span>7:30 - 9</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+        
+        <!-- 9 - 10:30 -->
+        <tr>
+          <td class="time-identifier">
+            <span>9 - 10:30</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 10:30 - 12 -->
+        <tr>
+          <td class="time-identifier">
+            <span>10:30 - 12</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 12 - 13:30 -->
+        <tr>
+          <td class="time-identifier">
+            <span>12 - 13:30</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+        
+        <!-- 13:30 - 15 -->
+        <tr>
+          <td class="time-identifier">
+            <span>13:30 - 15</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 15 - 16:30 -->
+        <tr>
+          <td class="time-identifier">
+            <span>15 - 16:30</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 16:30 - 18 -->
+        <tr>
+          <td class="time-identifier">
+            <span>16:30 - 18</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+        
+        <!-- 18 - 19:30 -->
+        <tr>
+          <td class="time-identifier">
+            <span>18 - 19:30</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 19:30 - 21 -->
+        <tr>
+          <td class="time-identifier">
+            <span>19:30 - 21</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 21 - 22:30 -->
+        <tr>
+          <td class="time-identifier">
+            <span>21 - 22:30</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 22:30 - 24 -->
+        <tr>
+          <td class="time-identifier">
+            <span>22:30 - 24</span>
+          </td>
+
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+          <td>
+            <div class="time-container">
+              <input type="text"  class="title" placeholder="title" required>
+              <textarea name="" id="" cols="30" rows="6" wrap placeholder="description"></textarea>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

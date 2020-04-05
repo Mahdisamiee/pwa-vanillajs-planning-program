@@ -8,6 +8,8 @@ const asserts = [
     "/images/icons/icon-48x48.png",
     "/images/css/all.min.css",
     "/js/app/js",
+    "/css/index.css",
+    "/offline.html"
 ]
 
 

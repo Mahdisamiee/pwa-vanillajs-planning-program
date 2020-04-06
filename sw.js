@@ -1,4 +1,4 @@
-const static_cache_name = "static-cache";
+const static_cache_name = "static-cache-v-2";
 const dynamic_cache_name = "dynamic_cache";
 
 const staticAssets = [
@@ -11,7 +11,7 @@ const staticAssets = [
   "/offline.html",
   "/css/offline.css",
   "/images/offline/page-not-found.svg",
-  "https://kit.fontawesome.com/bc08f79e12.js"
+  "https://kit.fontawesome.com/bc08f79e12.js",
 ]
 
 

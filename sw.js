@@ -1,4 +1,8 @@
-const static_cache_name = "static-cache-v-2";
+
+importScripts('/js/idb.js');
+importScripts('/js/utility.js');
+
+const static_cache_name = "static-cache-v-3";
 const dynamic_cache_name = "dynamic_cache";
 
 const staticAssets = [
@@ -21,10 +25,7 @@ self.addEventListener("install" , (event)=>{
       caches.open(static_cache_name)
         .then((cache)=>{
           console.log("%c" + "[Service Worker] precacheing app shell" , "font-weight: 500");
-          // cache.addAll(staticAssest);
           cache.addAll(staticAssets)
-          // cache.add("/");
-          // cache.add("/index.html");
         })
     )
 })
@@ -58,8 +59,8 @@ function isInStaticCache(requestUrl , staticAssest) {
 
 self.addEventListener("fetch", (event)=>{
   const urls = [
-    "https://domain/post",
-    "https://domain/user",
+    "https://deezerdevs-deezer.p.rapidapi.com/search?q=adele",
+    "https://sound-time-pwa.firebaseio.com/posts",
     "https://domain/login"
   ];
 
@@ -72,7 +73,22 @@ self.addEventListener("fetch", (event)=>{
   })
   if(!!finded){
     event.respondWith(
-      // here we should use IndexDb. [IndexDB]
+      fetch(event.request)
+        .then((response)=>{
+          let clonedRes = response.clone();
+          clearAllData('posts')
+            .then(()=>{
+              return clonedRes.json();
+            })
+            .then((data)=>{
+              for(let key in data) {
+                if(!!data[key]){
+                  writeData('posts', data[key]);
+                }
+              }
+            })
+            return response;
+        })
     )
   }else if(isInStaticCache(event.request.url, staticAssets)){
     event.respondWith(
